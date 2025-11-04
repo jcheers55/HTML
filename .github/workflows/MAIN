@@ -1,0 +1,1035 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandyPro × Cheers.Agency - Marketing Partnership Proposal</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700&display=swap');
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.7;
+            color: #1a202c;
+            background: #0f172a;
+            padding: 60px 20px;
+            position: relative;
+        }
+        
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 20% 30%, rgba(99, 102, 241, 0.15) 0%, transparent 50%),
+                radial-gradient(circle at 80% 70%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+                linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+            z-index: -1;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 25px 80px rgba(0,0,0,0.4);
+            overflow: hidden;
+            animation: fadeIn 0.6s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .header {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 50%, #ec4899 100%);
+            color: white;
+            padding: 70px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -10%;
+            width: 500px;
+            height: 500px;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .header::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -10%;
+            width: 400px;
+            height: 400px;
+            background: radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+        
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+        
+        .header h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 3em;
+            font-weight: 700;
+            margin-bottom: 15px;
+            letter-spacing: -1px;
+            text-shadow: 0 2px 20px rgba(0,0,0,0.2);
+        }
+        
+        .header .subtitle {
+            font-size: 1.4em;
+            opacity: 0.95;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+        }
+        
+        .meta-info {
+            background: rgba(255,255,255,0.15);
+            backdrop-filter: blur(10px);
+            border-radius: 16px;
+            padding: 30px;
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            border: 1px solid rgba(255,255,255,0.2);
+        }
+        
+        .meta-item {
+            text-align: left;
+        }
+        
+        .meta-label {
+            font-size: 0.8em;
+            opacity: 0.85;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-weight: 600;
+        }
+        
+        .meta-value {
+            font-size: 1.15em;
+            font-weight: 600;
+            margin-top: 8px;
+        }
+        
+        .content {
+            padding: 60px;
+        }
+        
+        .section {
+            margin-bottom: 50px;
+        }
+        
+        .section-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f1f5f9;
+        }
+        
+        .section-number {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            color: white;
+            border-radius: 12px;
+            font-weight: 700;
+            margin-right: 18px;
+            font-size: 1.2em;
+            box-shadow: 0 4px 15px rgba(99, 102, 241, 0.3);
+        }
+        
+        .section h2 {
+            font-size: 1.8em;
+            color: #1e293b;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+        
+        .section-intro {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-left: 4px solid #6366f1;
+            padding: 20px 25px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            font-style: italic;
+            color: #475569;
+            font-size: 1.05em;
+        }
+        
+        .section p {
+            color: #475569;
+            font-size: 1.05em;
+            margin-bottom: 15px;
+            line-height: 1.8;
+        }
+        
+        .highlight-box {
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            border-left: 4px solid #3b82f6;
+            padding: 28px;
+            border-radius: 12px;
+            margin: 25px 0;
+            box-shadow: 0 2px 8px rgba(59, 130, 246, 0.1);
+        }
+        
+        .highlight-box strong {
+            color: #1e40af;
+        }
+        
+        .highlight-box p {
+            margin-bottom: 10px;
+            color: #475569;
+            font-size: 1.05em;
+        }
+        
+        .key-point {
+            background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%);
+            border-left: 4px solid #f59e0b;
+            padding: 20px 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: flex;
+            align-items: start;
+            gap: 15px;
+        }
+        
+        .key-point::before {
+            content: "💡";
+            font-size: 1.5em;
+            flex-shrink: 0;
+        }
+        
+        .key-point div {
+            color: #475569;
+            font-size: 1.05em;
+        }
+        
+        .two-column {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin: 25px 0;
+        }
+        
+        .role-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 16px;
+            padding: 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .role-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #6366f1 0%, #a855f7 100%);
+            transform: scaleX(0);
+            transition: transform 0.4s ease;
+        }
+        
+        .role-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .role-card:hover {
+            border-color: #a855f7;
+            box-shadow: 0 12px 30px rgba(168, 85, 247, 0.15);
+            transform: translateY(-4px);
+        }
+        
+        .role-card h3 {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-size: 1.4em;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        
+        .role-card ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .role-card li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 12px;
+            font-size: 0.98em;
+            color: #475569;
+        }
+        
+        .role-card li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #6366f1;
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+        
+        .pricing-table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            margin: 25px 0;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+        
+        .pricing-table th {
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            color: white;
+            padding: 18px 20px;
+            text-align: left;
+            font-weight: 600;
+            font-size: 1.05em;
+        }
+        
+        .pricing-table td {
+            padding: 18px 20px;
+            border-bottom: 1px solid #f1f5f9;
+        }
+        
+        .pricing-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .pricing-table tbody tr {
+            transition: all 0.3s ease;
+        }
+        
+        .pricing-table tbody tr:hover {
+            background: linear-gradient(135deg, #faf5ff 0%, #f5f3ff 100%);
+            transform: scale(1.01);
+        }
+        
+        .badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #10b981 0%, #059669 100%);
+            color: white;
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.8em;
+            font-weight: 600;
+            margin-left: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            box-shadow: 0 2px 8px rgba(16, 185, 129, 0.3);
+        }
+        
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 25px 0;
+        }
+        
+        .benefit-item {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            padding: 28px;
+            border-radius: 14px;
+            border-left: 4px solid #a855f7;
+            transition: all 0.3s ease;
+        }
+        
+        .benefit-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 8px 20px rgba(168, 85, 247, 0.15);
+        }
+        
+        .benefit-item strong {
+            color: #6b21a8;
+            display: block;
+            margin-bottom: 10px;
+            font-size: 1.15em;
+            font-weight: 700;
+        }
+        
+        .benefit-item p {
+            color: #475569;
+            font-size: 1.05em;
+            margin: 0;
+        }
+        
+        .signature-section {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 16px;
+            padding: 40px;
+            margin-top: 50px;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .signature-section h3 {
+            color: #1e293b;
+            font-size: 1.5em;
+            margin-bottom: 25px;
+            font-weight: 700;
+        }
+        
+        .signature-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            margin-top: 35px;
+        }
+        
+        .signature-box {
+            border-bottom: 2px solid #475569;
+            padding-bottom: 12px;
+            margin-bottom: 12px;
+            min-height: 30px;
+        }
+        
+        .signature-label {
+            font-weight: 600;
+            color: #475569;
+            margin-top: 20px;
+            font-size: 0.95em;
+        }
+        
+        ul.custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        ul.custom-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 14px;
+            color: #475569;
+            font-size: 1.05em;
+        }
+        
+        ul.custom-list li:before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+        
+        .icon-list {
+            display: grid;
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .icon-item {
+            display: flex;
+            align-items: start;
+            gap: 15px;
+            padding: 18px;
+            background: #f8fafc;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+        
+        .icon-item:hover {
+            background: #f1f5f9;
+            transform: translateX(5px);
+        }
+        
+        .icon-item-icon {
+            flex-shrink: 0;
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .icon-item-content strong {
+            display: block;
+            color: #1e293b;
+            margin-bottom: 5px;
+            font-weight: 600;
+        }
+        
+        .icon-item-content p {
+            margin: 0;
+            font-size: 0.95em;
+            color: #64748b;
+        }
+        
+        .stat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            margin: 25px 0;
+        }
+        
+        .stat-card {
+            background: white;
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            border-color: #6366f1;
+            box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+            transform: translateY(-3px);
+        }
+        
+        .stat-number {
+            font-size: 2em;
+            font-weight: 700;
+            background: linear-gradient(135deg, #6366f1 0%, #a855f7 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            display: block;
+            margin-bottom: 8px;
+        }
+        
+        .stat-label {
+            font-size: 0.9em;
+            color: #64748b;
+            font-weight: 500;
+        }
+        
+        .tool-badges {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 20px 0;
+        }
+        
+        .tool-badge {
+            background: linear-gradient(135deg, #f1f5f9 0%, #e2e8f0 100%);
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-weight: 600;
+            color: #475569;
+            border: 2px solid #cbd5e1;
+            transition: all 0.3s ease;
+        }
+        
+        .tool-badge:hover {
+            border-color: #6366f1;
+            background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
+            transform: translateY(-2px);
+        }
+        
+        .kpi-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        
+        .kpi-item {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            font-weight: 600;
+            color: #166534;
+            border-left: 4px solid #10b981;
+        }
+        
+        @media (max-width: 768px) {
+            .content {
+                padding: 40px 30px;
+            }
+            
+            .header {
+                padding: 50px 30px;
+            }
+            
+            .header h1 {
+                font-size: 2em;
+            }
+            
+            .two-column, .benefits-grid, .signature-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .meta-info {
+                grid-template-columns: 1fr;
+            }
+            
+            .stat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        
+        @media print {
+            body {
+                background: white;
+                padding: 0;
+            }
+            
+            body::before {
+                display: none;
+            }
+            
+            .container {
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="header-content">
+                <h1>HandyPro × Cheers.Agency</h1>
+                <p class="subtitle">A Strategic Marketing Partnership Proposal</p>
+                <div class="meta-info">
+                    <div class="meta-item">
+                        <div class="meta-label">Prepared By</div>
+                        <div class="meta-value">Jared Cheers</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Role Transition</div>
+                        <div class="meta-value">Marketing Lead → Contractor</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Start Date</div>
+                        <div class="meta-value">November 2025</div>
+                    </div>
+                    <div class="meta-item">
+                        <div class="meta-label">Pilot & Reviews</div>
+                        <div class="meta-value">30 Days • Day 30 & 90</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content">
+            <!-- Section 1 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">1</span>
+                    <h2>Objective</h2>
+                </div>
+                <div class="section-intro">
+                    Transform employment overhead into a flexible, performance-driven partnership
+                </div>
+                <p>Transition Jared's current role at HandyPro into a contract-based partnership through Cheers.Agency. This ensures HandyPro retains the same marketing leadership, strategy, and execution — but with <strong>lower fixed costs, greater flexibility, and no loss in output or direction</strong>.</p>
+                <p>Cheers.Agency will serve as HandyPro's dedicated marketing partner, managing strategy, campaigns, and creative operations while coordinating with VA (Kryslin) for execution.</p>
+                <div class="key-point">
+                    <div><strong>What Changes:</strong> Employment classification and billing structure<br>
+                    <strong>What Stays:</strong> Same person, same expertise, same commitment to HandyPro's growth</div>
+                </div>
+            </div>
+            
+            <!-- Section 2 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">2</span>
+                    <h2>Mission</h2>
+                </div>
+                <div class="highlight-box">
+                    <p style="font-size: 1.15em; margin: 0;"><strong>To help HandyPro scale sustainably</strong> by blending strategic marketing leadership with lean execution systems.</p>
+                    <p style="margin-top: 15px; margin-bottom: 0;">Cheers.Agency operates as a long-term marketing extension — focused on clarity, performance, and measurable growth.</p>
+                </div>
+            </div>
+            
+            <!-- Section 3 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">3</span>
+                    <h2>Structure & Roles</h2>
+                </div>
+                <div class="section-intro">
+                    Clear division of responsibilities ensures seamless operations and accountability
+                </div>
+                <div class="two-column">
+                    <div class="role-card">
+                        <h3>Cheers.Agency (Jared Cheers)</h3>
+                        <ul>
+                            <li>Acts as Marketing Strategist & Creative Director</li>
+                            <li>Oversees campaign strategy, analytics, and optimization</li>
+                            <li>Maintains HandyPro's digital ecosystem (Webflow, Google Ads, Meta, SEO, Email)</li>
+                            <li>Creates new landing pages, ad creatives, and promotional materials</li>
+                            <li>Attends key internal meetings (BDM, team alignment, marketing syncs)</li>
+                            <li>Provides leadership and task management to VA</li>
+                        </ul>
+                    </div>
+                    <div class="role-card">
+                        <h3>VA (Kryslin)</h3>
+                        <ul>
+                            <li>Implements small-scale tasks and recurring duties</li>
+                            <li>Handles CRM updates, post scheduling, and admin support</li>
+                            <li>Communicates progress and deliverables for review</li>
+                            <li>Acts as a bridge between day-to-day execution and strategy</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="key-point">
+                    <div><strong>Operational Model:</strong> Jared focuses on high-level strategy and creative while Kryslin handles tactical execution, ensuring efficient resource allocation and maximum impact per dollar spent.</div>
+                </div>
+            </div>
+            
+            <!-- Section 4 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">4</span>
+                    <h2>Scope of Work</h2>
+                </div>
+                <div class="section-intro">
+                    Comprehensive marketing services included in the monthly retainer
+                </div>
+                <div class="icon-list">
+                    <div class="icon-item">
+                        <div class="icon-item-icon">A</div>
+                        <div class="icon-item-content">
+                            <strong>Strategy & Planning</strong>
+                            <p>Develop monthly plans, content calendars, and lead tracking systems</p>
+                        </div>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-item-icon">B</div>
+                        <div class="icon-item-content">
+                            <strong>Digital & Creative</strong>
+                            <p>Manage Google & Meta Ads, Webflow updates, landing pages, CRO, and email marketing</p>
+                        </div>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-item-icon">C</div>
+                        <div class="icon-item-content">
+                            <strong>Analytics & Optimization</strong>
+                            <p>Monitor KPIs, manage GA4 dashboards, and deliver monthly reports</p>
+                        </div>
+                    </div>
+                    <div class="icon-item">
+                        <div class="icon-item-icon">D</div>
+                        <div class="icon-item-content">
+                            <strong>VA Management & Collaboration</strong>
+                            <p>Delegate, review, and communicate tasks to ensure quality and consistency</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section 5 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">5</span>
+                    <h2>Time Allocation & Communication Cadence</h2>
+                </div>
+                <div class="stat-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">16</span>
+                        <div class="stat-label">Hours per Month</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">2</span>
+                        <div class="stat-label">In-Person Days</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">&lt;1</span>
+                        <div class="stat-label">Day Response Time</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">$40</span>
+                        <div class="stat-label">Hourly Rate (Extra)</div>
+                    </div>
+                </div>
+                <div class="highlight-box">
+                    <p><strong>Included:</strong> 16 hrs/month (up to 2 in-person workdays)</p>
+                    <p style="margin-bottom: 0;"><strong>Additional Hours:</strong> $40/hr (pre-approved)</p>
+                </div>
+                <p style="margin-top: 20px; font-weight: 600; color: #1e293b;">Communication Channels & Cadence:</p>
+                <ul class="custom-list">
+                    <li>Email / Slack / Text (≤1 business day response)</li>
+                    <li>Weekly 30-min marketing sync</li>
+                    <li>Bi-Weekly BDM meeting</li>
+                    <li>Monthly 60-min review + next roadmap</li>
+                </ul>
+            </div>
+            
+            <!-- Section 6 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">6</span>
+                    <h2>Pricing & Billing</h2>
+                </div>
+                <div class="section-intro">
+                    Transparent, flexible pricing designed for predictable budgeting with room to scale
+                </div>
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Type</th>
+                            <th>Hours</th>
+                            <th>Rate</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Retainer</strong></td>
+                            <td>Up to 16</td>
+                            <td>Flat</td>
+                            <td><strong style="font-size: 1.2em; color: #6366f1;">$750/month</strong></td>
+                        </tr>
+                        <tr>
+                            <td><strong>Extra Work</strong></td>
+                            <td>As needed</td>
+                            <td>$35/hr</td>
+                            <td>Variable</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div class="highlight-box" style="margin-top: 30px;">
+                    <p><strong>Optional Scaled Retainer:</strong></p>
+                    <p style="margin-bottom: 0;">8–10 hours/month at $500–$550/month, focusing on leadership, reporting, and Kryslin's guidance. Can scale up anytime.</p>
+                </div>
+                <p style="margin-top: 25px; font-weight: 600; color: #1e293b;">Billing Terms:</p>
+                <ul class="custom-list">
+                    <li><strong>Invoicing:</strong> 1st of month</li>
+                    <li><strong>Terms:</strong> Net 15</li>
+                    <li><strong>Status:</strong> 1099 Contractor</li>
+                </ul>
+            </div>
+            
+            <!-- Section 7 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">7</span>
+                    <h2>Projects Outside Retainer (SOW)</h2>
+                </div>
+                <div class="section-intro">
+                    Large-scale initiatives require separate scoping for accurate budgeting and timelines
+                </div>
+                <p>Major initiatives will be scoped separately: web rebuilds, multi-location SEO, CRM automation, video, and large-scale campaigns.</p>
+                <div class="key-point">
+                    <div><strong>Why Separate SOWs?</strong> Major projects require dedicated time blocks and specialized focus. Separating them ensures proper planning, resource allocation, and clear deliverables without impacting monthly retainer work.</div>
+                </div>
+            </div>
+            
+            <!-- Section 8 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">8</span>
+                    <h2>Quality Standards & SLAs</h2>
+                </div>
+                <div class="section-intro">
+                    Clear service level agreements ensure predictable delivery timelines
+                </div>
+                <ul class="custom-list">
+                    <li><strong>Routine updates:</strong> 2–3 days</li>
+                    <li><strong>Minor web fixes:</strong> 2 days</li>
+                    <li><strong>Landing pages:</strong> 5–7 days</li>
+                    <li><strong>Reporting:</strong> by 3rd business day</li>
+                    <li><strong>Urgent requests:</strong> same day</li>
+                </ul>
+                <div class="key-point">
+                    <div><strong>Quality Commitment:</strong> All deliverables are reviewed for brand consistency, accuracy, and performance optimization before handoff. Rush requests may affect timelines but will be communicated upfront.</div>
+                </div>
+            </div>
+            
+            <!-- Section 9 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">9</span>
+                    <h2>Tools & Software</h2>
+                </div>
+                <div class="section-intro">
+                    All tools and platforms managed at no additional software cost to HandyPro
+                </div>
+                <div class="tool-badges">
+                    <div class="tool-badge">Webflow</div>
+                    <div class="tool-badge">Google Ads</div>
+                    <div class="tool-badge">Meta</div>
+                    <div class="tool-badge">Canva</div>
+                    <div class="tool-badge">Adobe</div>
+                    <div class="tool-badge">Google Workspace</div>
+                    <div class="tool-badge">Notion</div>
+                </div>
+                <div class="highlight-box">
+                    <p style="margin: 0;"><strong>No added software cost to HandyPro.</strong> All tools are already licensed or will be provided by Cheers.Agency as part of the service.</p>
+                </div>
+            </div>
+            
+            <!-- Section 10 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">10</span>
+                    <h2>Reporting & KPIs</h2>
+                </div>
+                <div class="section-intro">
+                    Data-driven metrics to track marketing performance and ROI
+                </div>
+                <div class="kpi-grid">
+                    <div class="kpi-item">Lead Volume</div>
+                    <div class="kpi-item">CPL</div>
+                    <div class="kpi-item">Conversion Rate</div>
+                    <div class="kpi-item">CTR</div>
+                    <div class="kpi-item">CPC</div>
+                    <div class="kpi-item">CPA</div>
+                    <div class="kpi-item">SEO Rankings</div>
+                    <div class="kpi-item">Email Performance</div>
+                </div>
+                <p style="margin-top: 20px;">Comprehensive reports delivered <strong>monthly or bi-weekly</strong>, including trend analysis, insights, and actionable recommendations for continuous improvement.</p>
+            </div>
+            
+            <!-- Section 11 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">11</span>
+                    <h2>Intellectual Property & Confidentiality</h2>
+                </div>
+                <div class="highlight-box">
+                    <p><strong>All deliverables remain HandyPro property.</strong> Any work created, including designs, campaigns, content, code, and strategic documents become HandyPro's intellectual property upon delivery.</p>
+                    <p style="margin-bottom: 0;"><strong>Cheers.Agency maintains full confidentiality</strong> regarding all HandyPro business information, customer data, strategies, and proprietary processes.</p>
+                </div>
+            </div>
+            
+            <!-- Section 12 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">12</span>
+                    <h2>Term, Renewal & Termination</h2>
+                </div>
+                <div class="section-intro">
+                    Flexible engagement terms with built-in checkpoints for evaluation
+                </div>
+                <ul class="custom-list">
+                    <li><strong>Pilot Period:</strong> 30-day trial starting November 2025</li>
+                    <li><strong>Review Checkpoints:</strong> Performance reviews at Day 30 & Day 90</li>
+                    <li><strong>Contract Structure:</strong> Month-to-month thereafter</li>
+                    <li><strong>Termination:</strong> 30-day written notice from either party</li>
+                </ul>
+                <div class="key-point">
+                    <div><strong>Low-Risk Trial:</strong> The 30-day pilot allows both parties to evaluate the partnership with minimal commitment. After successful reviews, the relationship continues on flexible month-to-month terms.</div>
+                </div>
+            </div>
+            
+            <!-- Section 13 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">13</span>
+                    <h2>Future Growth & Scalability</h2>
+                </div>
+                <div class="section-intro">
+                    Built to scale with HandyPro's growth trajectory
+                </div>
+                <p>Cheers.Agency can train new VAs, integrate automation, expand ad campaigns, and scale branding services as needed.</p>
+                <p style="margin-top: 20px; font-weight: 600; color: #1e293b;">Growth Capabilities:</p>
+                <ul class="custom-list">
+                    <li>Onboard and train additional VAs or team members</li>
+                    <li>Implement marketing automation and CRM workflows</li>
+                    <li>Scale ad spend and campaign complexity</li>
+                    <li>Expand into new markets or service lines</li>
+                    <li>Develop comprehensive brand systems and guidelines</li>
+                    <li>Build multi-channel marketing ecosystems</li>
+                </ul>
+            </div>
+            
+            <!-- Section 14 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">14</span>
+                    <h2>Mutual Benefits</h2>
+                </div>
+                <div class="section-intro">
+                    A win-win partnership structure designed for long-term success
+                </div>
+                <div class="benefits-grid">
+                    <div class="benefit-item">
+                        <strong>For HandyPro:</strong>
+                        <p>Keeps leadership, reduces cost, scales flexibly</p>
+                    </div>
+                    <div class="benefit-item">
+                        <strong>For Cheers.Agency:</strong>
+                        <p>Enables education, reinvestment, and long-term partnership</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Section 15 -->
+            <div class="section">
+                <div class="section-header">
+                    <span class="section-number">15</span>
+                    <h2>Approval & Signatures</h2>
+                </div>
+                <div class="signature-section">
+                    <h3>Agreement Terms</h3>
+                    <p style="font-size: 1.1em; color: #475569; margin-bottom: 10px;">
+                        <strong>Full Retainer:</strong> $750/month <span class="badge">Recommended</span>
+                    </p>
+                    <p style="font-size: 1.05em; color: #475569; margin-bottom: 10px;">
+                        <strong>Optional Scaled:</strong> $500–$550/month (8–10 hrs)
+                    </p>
+                    <p style="font-size: 1.05em; color: #475569;">
+                        <strong>Extra Hours:</strong> $35/hr (pre-approved)
+                    </p>
+                    
+                    <div class="signature-row">
+                        <div>
+                            <div class="signature-label">Start Date:</div>
+                            <div class="signature-box"></div>
+                            
+                            <div class="signature-label" style="margin-top: 30px;">Signature (HandyPro):</div>
+                            <div class="signature-box"></div>
+                            <div class="signature-label">Date:</div>
+                            <div class="signature-box" style="max-width: 200px;"></div>
+                        </div>
+                        <div>
+                            <div class="signature-label">Review Milestones:</div>
+                            <div class="signature-box" style="font-size: 0.95em; padding-top: 8px; color: #64748b;">Day 30 & Day 90</div>
+                            
+                            <div class="signature-label" style="margin-top: 30px;">Signature (Jared Cheers):</div>
+                            <div class="signature-box"></div>
+                            <div class="signature-label">Date:</div>
+                            <div class="signature-box" style="max-width: 200px;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
